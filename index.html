@@ -7,7 +7,7 @@
   <meta name="description" content="On-site live laser engraving for trade shows, brand activations, and corporate events. Personalized luggage tags, tumblers, and metal gifts engraved while guests watch. Based in Chicago, available for travel.">
   <meta name="author" content="Brand Image Live">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f6f3ec">
+  <meta name="theme-color" content="#0e0d0b">
   <meta name="color-scheme" content="light">
   <meta name="format-detection" content="telephone=no, email=no, address=no">
   <link rel="canonical" href="https://artmro2.github.io/brand-image-live/">
@@ -30,6 +30,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/cormorant-garamond-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="images/hero-still.jpg" as="image">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -70,55 +71,45 @@
   </header>
 
   <main id="content">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Live laser engraving · Chicago</p>
-          <h1>Your Brand, <br>Engraved Live.</h1>
-          <p class="lede">We bring live laser engraving to your trade show booth, brand activation, or corporate event. Guests watch their name and your logo go onto a premium keepsake in minutes.</p>
-          <div class="cta-row">
-            <a class="btn" href="#quote">Get a Quote</a>
-            <a class="link" href="#process">How it works</a>
-          </div>
-          <p class="where">Based in Chicago, available for travel.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="images/hero-still.jpg" width="1280" height="720" alt="A blank leather luggage tag and a plain metal tumbler on a dark table. Material study, not event photography." fetchpriority="high" decoding="async">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Live laser engraving · Chicago</p>
+        <h1 id="hero-title">Your Brand, <br>Engraved Live.</h1>
+        <p class="lede">We bring live laser engraving to your trade show booth, brand activation, or corporate event. Guests watch their name and your logo go onto a premium keepsake in minutes.</p>
+        <div class="cta-row">
+          <a class="btn" href="#quote">Get a Quote</a>
+          <a class="link" href="#process">How it works</a>
         </div>
-        <aside class="plate">
-          <div class="plate-top">
-            <span>Live station</span>
-            <span>Diagram</span>
-          </div>
-          <svg class="plate-art" viewBox="0 0 280 340" aria-hidden="true" focusable="false">
-            <path d="M118 16h44a10 10 0 0 1 10 10v30h-64V26a10 10 0 0 1 10-10z" fill="#4a2c24"/>
-            <rect x="68" y="46" width="144" height="236" rx="18" fill="#6e4032"/>
-            <rect x="82" y="60" width="116" height="208" rx="12" fill="none" stroke="#ead7cb" stroke-width="1.25" stroke-dasharray="2 3.2"/>
-            <circle cx="140" cy="82" r="8" fill="#efe8df" stroke="#3d241e" stroke-width="1.4"/>
-            <rect x="98" y="122" width="84" height="72" rx="3" fill="#d9d3c8" stroke="#5e5850" stroke-width="1"/>
-            <rect x="110" y="134" width="16" height="14" fill="none" stroke="#2f2b27" stroke-width="1.2"/>
-            <path d="M132 141h36M110 162h60M110 176h42" stroke="#2f2b27" stroke-width="1.2" fill="none"/>
-            <g class="laser">
-              <line x1="94" y1="0" x2="186" y2="0" stroke="#7a4e32" stroke-width="1.5"/>
-            </g>
-          </svg>
-          <p class="plate-caption">Diagram of a leather and metal luggage tag.</p>
-          <dl class="plate-specs">
-            <div>
-              <dt>Footprint</dt>
-              <dd>6' × 4'</dd>
-            </div>
-            <div>
-              <dt>Power</dt>
-              <dd>15A/20A</dd>
-            </div>
-            <div>
-              <dt>Table</dt>
-              <dd>One</dd>
-            </div>
-            <div>
-              <dt>Mark</dt>
-              <dd>Logo plus guest names</dd>
-            </div>
-          </dl>
-        </aside>
+        <p class="where">Based in Chicago, available for travel.</p>
+        <p class="hero-note">Material study. Not event photography.</p>
+      </div>
+    </section>
+
+    <section class="section approach" aria-labelledby="approach-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="approach-title">The station</h2>
+          <p class="section-intro">One station and operator. Logo plus guest names.</p>
+        </div>
+        <ol class="approach-list">
+          <li>
+            <span class="idx" aria-hidden="true">01</span>
+            <h3>Items</h3>
+            <p>Leather and metal luggage tags, tumblers and water bottles, metal business cards, keychains, and other metal gifts.</p>
+          </li>
+          <li>
+            <span class="idx" aria-hidden="true">02</span>
+            <h3>Logo plus guest names</h3>
+            <p>Guests watch their name and your logo go onto a premium keepsake in minutes.</p>
+          </li>
+          <li>
+            <span class="idx" aria-hidden="true">03</span>
+            <h3>Engraved live</h3>
+            <p>Guests personalize and we engrave live.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -147,61 +138,29 @@
       </div>
     </section>
 
-    <section class="section" id="items" aria-labelledby="items-title">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="items-title">Items</h2>
-          <p class="section-intro">Leather and metal luggage tags, tumblers and water bottles, metal business cards, keychains, and other metal gifts.</p>
+    <section class="section items" id="items" aria-labelledby="items-title">
+      <div class="wrap items-layout">
+        <figure class="study">
+          <img src="images/metal-study.jpg" width="1152" height="864" alt="Close view of blank leather on brushed metal. Material study, not event photography." decoding="async">
+          <figcaption>Material study. Not event photography.</figcaption>
+        </figure>
+        <div>
+          <div class="section-head">
+            <h2 id="items-title">Items</h2>
+            <p class="section-intro">Leather and metal luggage tags, tumblers and water bottles, metal business cards, keychains, and other metal gifts.</p>
+          </div>
+          <ul class="item-list">
+            <li>Leather and metal luggage tags</li>
+            <li>Tumblers and water bottles</li>
+            <li>Metal business cards</li>
+            <li>Keychains</li>
+            <li>Other metal gifts</li>
+          </ul>
         </div>
-        <ul class="item-grid">
-          <li class="item-card">
-            <svg viewBox="0 0 160 110" aria-hidden="true" focusable="false">
-              <rect x="58" y="8" width="44" height="22" rx="6" fill="#4e2e26"/>
-              <rect x="46" y="22" width="68" height="80" rx="8" fill="#6e4032"/>
-              <circle cx="80" cy="38" r="4" fill="#f6f3ec"/>
-              <rect x="62" y="50" width="36" height="38" fill="#d5cfc6"/>
-              <path d="M68 62h24M68 72h18" stroke="#2c2926" stroke-width="1.2"/>
-            </svg>
-            <h3>Leather and metal luggage tags</h3>
-          </li>
-          <li class="item-card">
-            <svg viewBox="0 0 160 110" aria-hidden="true" focusable="false">
-              <rect x="72" y="14" width="16" height="7" rx="1" fill="#2c2926"/>
-              <ellipse cx="80" cy="28" rx="26" ry="7" fill="#d9d4cc" stroke="#2c2926" stroke-width="1.2"/>
-              <path d="M54 28 L62 96 Q80 106 98 96 L106 28 Z" fill="#b7b1a8" stroke="#2c2926" stroke-width="1.2"/>
-              <path d="M66 62h28" stroke="#7a4e32" stroke-width="1.6"/>
-            </svg>
-            <h3>Tumblers and water bottles</h3>
-          </li>
-          <li class="item-card">
-            <svg viewBox="0 0 160 110" aria-hidden="true" focusable="false">
-              <rect x="28" y="28" width="104" height="64" rx="4" fill="#d4cfc6" stroke="#2c2926" stroke-width="1.2"/>
-              <rect x="40" y="42" width="16" height="16" fill="none" stroke="#7a4e32" stroke-width="1.3"/>
-              <path d="M64 48h52M64 60h40M40 76h48" stroke="#2c2926" stroke-width="1.2"/>
-            </svg>
-            <h3>Metal business cards</h3>
-          </li>
-          <li class="item-card">
-            <svg viewBox="0 0 160 110" aria-hidden="true" focusable="false">
-              <rect x="74" y="40" width="52" height="28" rx="3" fill="#d4cfc6" stroke="#2c2926" stroke-width="1.2"/>
-              <circle cx="62" cy="54" r="16" fill="none" stroke="#2c2926" stroke-width="3"/>
-              <path d="M86 54h26" stroke="#7a4e32" stroke-width="1.5"/>
-            </svg>
-            <h3>Keychains</h3>
-          </li>
-          <li class="item-card">
-            <svg viewBox="0 0 160 110" aria-hidden="true" focusable="false">
-              <circle cx="80" cy="56" r="34" fill="#d4cfc6" stroke="#2c2926" stroke-width="1.2"/>
-              <circle cx="80" cy="56" r="22" fill="none" stroke="#7a4e32" stroke-width="1.4"/>
-              <path d="M68 56h24" stroke="#2c2926" stroke-width="1.2"/>
-            </svg>
-            <h3>Other metal gifts</h3>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <section class="section" id="process" aria-labelledby="process-title">
+    <section class="ink" id="process" aria-labelledby="process-title">
       <div class="wrap">
         <div class="section-head">
           <h2 id="process-title">How it works</h2>
@@ -227,6 +186,28 @@
       </div>
     </section>
 
+    <section class="ink ink-next" id="station" aria-labelledby="station-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="station-title">Station requirements</h2>
+        </div>
+        <ul class="spec-grid">
+          <li>
+            <span class="spec-label">Space</span>
+            <p>About 6' × 4' and one table</p>
+          </li>
+          <li>
+            <span class="spec-label">Power</span>
+            <p>Standard 15A/20A circuit</p>
+          </li>
+          <li>
+            <span class="spec-label">Venues</span>
+            <p>COI available for venues on request</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section" id="packages" aria-labelledby="packages-title">
       <div class="wrap">
         <div class="section-head">
@@ -237,18 +218,32 @@
           <article class="package">
             <h3>Starter Station</h3>
             <p class="price">$1,000–$1,500</p>
+            <ul class="glance">
+              <li>3–4 hours</li>
+              <li>~50–150 guests</li>
+              <li>One station and operator</li>
+            </ul>
             <p>3–4 hours, one station and operator, logo plus guest names. ~50–150 guests.</p>
             <a class="btn" href="#quote">Get a Quote<span class="vh"> for Starter Station</span></a>
           </article>
           <article class="package">
             <h3>Brand Activation</h3>
             <p class="price">$2,500–$3,500</p>
+            <ul class="glance">
+              <li>Full day</li>
+              <li>Branded station</li>
+              <li>Design setup</li>
+            </ul>
             <p>Full day, branded station, design setup. For trade shows and multi-hour activations.</p>
             <a class="btn" href="#quote">Get a Quote<span class="vh"> for Brand Activation</span></a>
           </article>
           <article class="package">
             <h3>Custom / Multi-Station</h3>
             <p class="price">Quoted per event.</p>
+            <ul class="glance">
+              <li>More than one station</li>
+              <li>Quoted per event</li>
+            </ul>
             <p>More than one station, or a plan that does not fit the packages above.</p>
             <a class="btn" href="#quote">Get a Quote<span class="vh"> for a custom or multi-station event</span></a>
           </article>
@@ -266,29 +261,7 @@
       </div>
     </section>
 
-    <section class="section" id="station" aria-labelledby="station-title">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="station-title">Station requirements</h2>
-        </div>
-        <ul class="spec-list">
-          <li>
-            <span class="spec-label">Space</span>
-            <span>About 6' × 4' and one table</span>
-          </li>
-          <li>
-            <span class="spec-label">Power</span>
-            <span>Standard 15A/20A circuit</span>
-          </li>
-          <li>
-            <span class="spec-label">Venues</span>
-            <span>COI available for venues on request</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
+    <section class="section about" id="about" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <div class="section-head">
           <h2 id="about-title">About</h2>
@@ -303,10 +276,10 @@
 
     <section class="quote-section" id="quote" aria-labelledby="quote-title">
       <div class="band">
-        <div class="wrap band-inner">
-          <p class="band-kicker">Based in Chicago, available for travel.</p>
+        <div class="wrap">
+          <p class="eyebrow">Based in Chicago, available for travel.</p>
           <p class="band-title">Your Brand, <br>Engraved Live.</p>
-          <a class="btn btn-light" href="#quote-form">Get a Quote</a>
+          <a class="btn" href="#quote-form">Get a Quote</a>
         </div>
       </div>
       <div class="wrap quote-wrap">
