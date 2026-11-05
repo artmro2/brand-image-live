@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artmro2.github.io/brand-image-live/sitemap.xml
