@@ -34,6 +34,18 @@
     });
   }
 
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    var revealNodes = document.querySelectorAll(".reveal");
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        revealObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+    revealNodes.forEach(function (node) { revealObserver.observe(node); });
+  }
+
   var form = document.getElementById("quote-form");
   if (!form) return;
 
