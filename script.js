@@ -46,6 +46,51 @@
     revealNodes.forEach(function (node) { revealObserver.observe(node); });
   }
 
+  var preview = document.getElementById("preview-name");
+  var stage = document.getElementById("bench-stage");
+  if (preview && stage) {
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var burns = stage.querySelectorAll(".burn");
+    var sparks = stage.querySelectorAll(".spark");
+
+    function previewName() {
+      var value = preview.value.replace(/[\u0000-\u001F<>]/g, "").slice(0, 16);
+      var name = value.trim() || "Alex";
+      var size = name.length > 12 ? 18 : name.length > 8 ? 24 : 32;
+      burns.forEach(function (el) {
+        el.textContent = name;
+        el.setAttribute("font-size", size);
+        el.classList.remove("is-run");
+        if (!reduceMotion) {
+          void el.getBoundingClientRect();
+          el.classList.add("is-run");
+        }
+      });
+      sparks.forEach(function (el) {
+        el.classList.remove("is-run");
+        if (!reduceMotion) {
+          void el.getBoundingClientRect();
+          el.classList.add("is-run");
+        }
+      });
+    }
+
+    preview.addEventListener("input", previewName);
+    stage.querySelectorAll(".piece-btn").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var piece = button.getAttribute("data-piece");
+        stage.setAttribute("data-active", piece);
+        stage.querySelectorAll(".piece-btn").forEach(function (other) {
+          var on = other === button;
+          other.classList.toggle("is-on", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        previewName();
+      });
+    });
+    previewName();
+  }
+
   var form = document.getElementById("quote-form");
   if (!form) return;
 
