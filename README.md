@@ -12,4 +12,4 @@ The quote form checks each field in the browser and shows a confirmation on the 
 
 ## Fonts
 
-Cormorant Garamond and Outfit are included under the SIL Open Font License. License texts are in `fonts/`.
+Oswald, Cormorant Garamond, and Outfit are included under the SIL Open Font License. License texts are in `fonts/`.
